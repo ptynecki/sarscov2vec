@@ -32,9 +32,9 @@ The proposed methodology wrapped in the _sarscov2vec_ brings a new alignment-fre
 
 ### fastText NLP model
 
-| Filename with SHA256 checksum                                                                                                  | Variants                                  | Description                                                                                          |
-|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|------------------------------------------------------------------------------------------------------|
-| ffasttext_unsupervised_kmer7_25k_samples.28.02.2022.bin<br/>_44f789dcb156201dac9217f8645d86ac585ec24c6eba68901695dc254a14adc3_ | Alpha, Beta, Delta, Gamma, Omicron (BA.1) | fastText unsupervised model trained on 7-mers tokens extracted from 25 000 unique SARS-CoV-2 samples |
+| Filename with SHA256 checksum                                                                                                 | Variants                                  | Description                                                                                          |
+|-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|------------------------------------------------------------------------------------------------------|
+| fasttext_unsupervised_kmer7_25k_samples.28.02.2022.bin<br/>_44f789dcb156201dac9217f8645d86ac585ec24c6eba68901695dc254a14adc3_ | Alpha, Beta, Delta, Gamma, Omicron (BA.1) | fastText unsupervised model trained on 7-mers tokens extracted from 25 000 unique SARS-CoV-2 samples |
 
 ### Machine Learning model and label encoder
 
