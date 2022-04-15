@@ -27,16 +27,16 @@ The proposed methodology wrapped in the _sarscov2vec_ brings a new alignment-fre
 
 ### fastText NLP model
 
-| Filename                                                | Checksum (SHA256)                                                   | Variants                                  | Description                                                                                          |
-|---------------------------------------------------------|------------------------------------------------------------------|-------------------------------------------|------------------------------------------------------------------------------------------------------|
-| ffasttext_unsupervised_kmer7_25k_samples.28.02.2022.bin | 44f789dcb156201dac9217f8645d86ac585ec24c6eba68901695dc254a14adc3 | Alpha, Beta, Delta, Gamma, Omicron (BA.1) | fastText unsupervised model trained on 7-mers tokens extracted from 25 000 unique SARS-CoV-2 samples |
+| Filename with SHA256 checksum                                                                                                  | Variants                                  | Description                                                                                          |
+|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|------------------------------------------------------------------------------------------------------|
+| ffasttext_unsupervised_kmer7_25k_samples.28.02.2022.bin<br/>_44f789dcb156201dac9217f8645d86ac585ec24c6eba68901695dc254a14adc3_ | Alpha, Beta, Delta, Gamma, Omicron (BA.1) | fastText unsupervised model trained on 7-mers tokens extracted from 25 000 unique SARS-CoV-2 samples |
 
 ### Machine Learning model and label encoder
 
-| Filename                                     | Checksum (SHA256)                                                | Variants                                        | Description                                                                                                                                         |
-|----------------------------------------------|------------------------------------------------------------------|-------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| svm_supervised_36k_samples.28.02.2022.joblib | 70abd23b0181786d4ab8e06ea23bd14641f509c13db58c7f2fa2baea17aa42af | Alpha, Beta, Delta, Gamma, Omicron (BA.1, BA.2) | SVM supervised model trained and tested using 36,365 unique SARS-CoV-2 samples. Each genome sample was transformed by fastText model at 28.02.2022. |
-| label_encoder_36k_samples.28.02.2022.joblib  | 7cb654924f69de6efbf6f409efd91af05874e1392220d22b9883d36c17b366c9 | Alpha, Beta, Delta, Gamma, Omicron (BA.1, BA.2) | Label extracted from 36,365 unique SARS-CoV-2 samples at 28.02.2022.                                                                                |
+| Filename with SHA256 checksum                                                                                       | Variants                                        | Description                                                                                                                                         |
+|---------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| svm_supervised_36k_samples.28.02.2022.joblib<br/>_70abd23b0181786d4ab8e06ea23bd14641f509c13db58c7f2fa2baea17aa42af_ | Alpha, Beta, Delta, Gamma, Omicron (BA.1, BA.2) | SVM supervised model trained and tested using 36,365 unique SARS-CoV-2 samples. Each genome sample was transformed by fastText model at 28.02.2022. |
+| label_encoder_36k_samples.28.02.2022.joblib<br/>_7cb654924f69de6efbf6f409efd91af05874e1392220d22b9883d36c17b366c9_  | Alpha, Beta, Delta, Gamma, Omicron (BA.1, BA.2) | Label extracted from 36,365 unique SARS-CoV-2 samples at 28.02.2022.                                                                                |
 
 ## Installation and usage
 
