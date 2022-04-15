@@ -38,6 +38,18 @@ The proposed methodology wrapped in the _sarscov2vec_ brings a new alignment-fre
 | svm_supervised_36k_samples.28.02.2022.joblib<br/>_70abd23b0181786d4ab8e06ea23bd14641f509c13db58c7f2fa2baea17aa42af_ | Alpha, Beta, Delta, Gamma, Omicron (BA.1, BA.2) | SVM supervised model trained and tested using 36,365 unique SARS-CoV-2 samples. Each genome sample was transformed by fastText model at 28.02.2022. |
 | label_encoder_36k_samples.28.02.2022.joblib<br/>_7cb654924f69de6efbf6f409efd91af05874e1392220d22b9883d36c17b366c9_  | Alpha, Beta, Delta, Gamma, Omicron (BA.1, BA.2) | Label extracted from 36,365 unique SARS-CoV-2 samples at 28.02.2022.                                                                                |
 
+### Datasets
+
+All the samples used in this research were listed in `dataset` directory as *.feather exports. These files were covered by:
+* accession number
+* pangolin
+* country
+* year
+* genome length (bp)
+* gc
+* data source
+* hash (unique values based on genome sequence)
+
 ## Installation and usage
 
 #### sarscov2vec package

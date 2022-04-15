@@ -1,5 +1,4 @@
 from setuptools import setup
-from glob import glob
 from pathlib import Path
 
 
@@ -32,9 +31,9 @@ setup(
     setup_requires=["setuptools>=50.3.0", "wheel>=0.35.1"],
     install_requires=dependencies,
     packages=[
-        "tools",
+        "tools"
     ],
-    data_files=glob("notebooks/*/**"),
+    data_files=[],
     include_package_data=True,
     keywords=[
         "SARS-CoV-2",
