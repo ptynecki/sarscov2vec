@@ -7,9 +7,8 @@ Our research results show that the final hiper-tuned machine learning model achi
 <img src="fasttext_7mer_umap_projection.28.02.2022.png">
 <sub>
     Figure 1. 2D projection of 61,365 SARS-CoV-2 samples combined from NLP and ML datasets, performed by PCA and UMAP. Legend of virus variants: light green “BA.1”, dark green “BA.2”, red “B.1.617.2”, pink “B.1.1.7”, blue “P.1”, yellow “B.1.351”.
-</sub>
-  
-  
+</sub><br><br>
+
 The proposed methodology wrapped in the _sarscov2vec_ brings a new alignment-free AI-aided bioinformatics tool that distinguishes different SARS-CoV-2 variants solely on the genome sequences. Importantly, the obtained results serve as the proof of concept that the presented approach can also be applied in understanding the genomic diversity of other pathogens.
   
 [![PyPI version](https://img.shields.io/pypi/v/sarscov2vec.svg)](https://pypi.org/project/sarscov2vec/)
