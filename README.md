@@ -11,7 +11,6 @@ The proposed methodology wrapped in the _sarscov2vec_ brings a new alignment-fre
 [![Code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 
-
 ## Table of Contents
 
 [Modules](https://github.com/ptynecki/sarscov2vec#modules) | 
@@ -26,7 +25,18 @@ The proposed methodology wrapped in the _sarscov2vec_ brings a new alignment-fre
 
 ## Modules
 
-TBA
+### fastText NLP model
+
+| Filename                                                | Checksum (SHA256)                                                   | Variants                                  | Description                                                                                          |
+|---------------------------------------------------------|------------------------------------------------------------------|-------------------------------------------|------------------------------------------------------------------------------------------------------|
+| ffasttext_unsupervised_kmer7_25k_samples.28.02.2022.bin | 44f789dcb156201dac9217f8645d86ac585ec24c6eba68901695dc254a14adc3 | Alpha, Beta, Delta, Gamma, Omicron (BA.1) | fastText unsupervised model trained on 7-mers tokens extracted from 25 000 unique SARS-CoV-2 samples |
+
+### Machine Learning model and label encoder
+
+| Filename                                     | Checksum (SHA256)                                                | Variants                                        | Description                                                                                                                                         |
+|----------------------------------------------|------------------------------------------------------------------|-------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| svm_supervised_36k_samples.28.02.2022.joblib | 70abd23b0181786d4ab8e06ea23bd14641f509c13db58c7f2fa2baea17aa42af | Alpha, Beta, Delta, Gamma, Omicron (BA.1, BA.2) | SVM supervised model trained and tested using 36,365 unique SARS-CoV-2 samples. Each genome sample was transformed by fastText model at 28.02.2022. |
+| label_encoder_36k_samples.28.02.2022.joblib  | 7cb654924f69de6efbf6f409efd91af05874e1392220d22b9883d36c17b366c9 | Alpha, Beta, Delta, Gamma, Omicron (BA.1, BA.2) | Label extracted from 36,365 unique SARS-CoV-2 samples at 28.02.2022.                                                                                |
 
 ## Installation and usage
 
@@ -43,6 +53,7 @@ If you can't wait for the latest hotness from the develop branch, then install i
 ```
 pip install git+git://github.com/ptynecki/sarscov2vec.git@develop
 ```
+Package examples are available in `notebooks` directory.
 
 ## Contributions
 
