@@ -73,7 +73,7 @@ See [CHANGELOG.md](https://github.com/ptynecki/sarscov2vec/blob/master/CHANGELOG
 
 ## License
 
-The PhageAI package is released under the under terms of [the MIT License](https://github.com/ptynecki/sarscov2vec/blob/master/LICENSE).
+The sarscov2vec package is released under the under terms of [the MIT License](https://github.com/ptynecki/sarscov2vec/blob/master/LICENSE).
 
 ## Cite
 
