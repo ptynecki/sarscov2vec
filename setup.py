@@ -32,7 +32,7 @@ setup(
     setup_requires=["setuptools>=50.3.0", "wheel>=0.35.1"],
     install_requires=dependencies,
     packages=[
-        "sarscov2vec",
+        "tools",
     ],
     data_files=glob("notebooks/*/**"),
     include_package_data=True,
